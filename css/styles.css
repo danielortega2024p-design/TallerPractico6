@@ -1,0 +1,371 @@
+body {
+  background-color: rgb(17, 24, 39);
+  margin: 0%;
+  justify-content: center;
+}
+
+.derecha {
+  width: 50%;
+  height: auto;
+  justify-content: end;
+}
+
+.derecha p {
+  margin-right: 20px;
+  color: white;
+}
+
+.derecha a {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-top: 15px;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.izquierda {
+  width: 50%;
+  height: auto;
+}
+
+.izquierda h5 {
+  color: #FACC15;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 17px;
+  margin-left: 20px;
+
+}
+
+.izquierda a {
+  text-decoration: none;
+}
+
+.padre {
+  background-color: rgb(15, 23, 43);
+}
+
+.colorf {
+  height: 2px;
+  background-color: rgb(41, 52, 71);
+}
+
+.colorf p {
+  color: rgb(41, 52, 71);
+  margin: 0%;
+}
+
+.nav {
+  text-align: center;
+  justify-content: center;
+}
+
+.nav h1 {
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0px;
+}
+
+.nav p {
+  color:#7F919C ;
+  margin-top: 10px;
+}
+
+#search {
+  width: 500px;
+  height: 40px;
+  background-color: rgb(30, 41, 59);
+  color: white;
+  border: 2px solid rgb(46, 59, 79);
+  border-radius: 10px;
+}
+
+#type {
+  margin-left: 20px;
+  width: 500px;
+  height: 45px;
+  background-color: rgb(30, 41, 59);
+  color: white;
+  border: 2px solid rgb(46, 59, 79);
+  border-radius: 10px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+
+}
+
+#container div {
+  width: 70%;
+  height: 450px;
+  margin: 50px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0px 15px 15px 15px;
+  background-color: #1E293B;
+  color: white;
+  overflow: hidden;
+
+
+}
+
+#container h2 {
+  color: #FACC15;
+  margin-bottom: 7px;
+}
+
+#container img {
+  
+  width: 400px;
+  height: 270px;
+  object-fit: contain;
+  display: block;
+  background-color: white;
+  margin: 0px;
+  margin-left: -72px;
+
+}
+
+
+#container p {
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container button {
+  height: 30px;
+  margin-top: 15px;
+  background-color: #FACC15;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav h4 {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  text-align: left;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#principal {
+  display: flex;
+  max-width: 1100px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background-color: rgb(30, 41, 59);
+  border: 1px solid rgb(41, 52, 71);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#principal div {
+  width: 80%;
+  background-color: rgb(30, 41, 59);
+}
+
+#principal p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal nav {
+  width: 20%;
+  background-color: rgb(51, 65, 85);
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+
+#principal h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#principal article {
+  margin-right: 20px;
+  width: 33.3%;
+  height: 30px;
+  text-align: left;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(15, 23, 42);
+}
+
+#principal small {
+  color: rgb(94, 109, 148);
+}
+
+#principal img {
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#principal span {
+  display: flex;
+}
+
+#principal button {
+  height: 35px;
+  width: 200px;
+  background-color: turquoise;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-right: 610px;
+  cursor: pointer;
+}
+
+#Transformation {
+  display: flex;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#Transformation div {
+  width: 100%;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(30, 41, 59);
+}
+
+#Transformation img {
+  margin-left: 40px;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#Transformation p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#description {
+  display: flex;
+  background-color: rgb(30, 41, 59);
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#description nav {
+  width: 67.7%;
+  margin-top: 30px;
+}
+
+#description div {
+  width: 33.3%;
+  height: 300px;
+  margin-right: 30px;
+}
+
+#description img {
+  margin-left: 40px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#description h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#description p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#characteres {
+  display: grid;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+
+#characteres div {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0;
+  background-color: rgb(30, 41, 59);
+  overflow: hidden;
+}
+
+#characteres img {
+  width: 370px;
+  height: 270px;
+  object-fit: contain;
+  display: block;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0;
+  margin-left: -50px;
+}
+
+
+#characteres p {
+  color: white;
+  margin: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#characteres h2 {
+  color: #FACC15;
+  margin-bottom: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#characteres button {
+  background-color: #FACC15;
+  margin: 7%;
+  border: 1px solid #FACC15;
+  border-radius: 10px;
+  height: 42px;
+  width: 100px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}

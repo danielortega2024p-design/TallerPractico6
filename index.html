@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal 3">
+    <meta name="author" content="Daniel Jose Ortega Polo">
+    <title>Dragon Ball Z</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/consumirapi.js"></script>
+    <script src="js/utilidades.js"></script>
+</head>
+<body>
+
+     <div class="flex padre">
+        <div class="izquierda">
+           <a href="index.html"><h5>DRAGON BALL API</h5></a> 
+        </div>
+        <div class="derecha flex">
+            <a href="index.html">Personajes</a>
+            <p>Detalle demo</p>
+        </div>
+    </div>
+    <div class="colorf">
+        <p>-</p>
+    </div>
+    <div>
+        <nav class="nav">
+            <h1>Explorador Dragon Ball</h1>
+            <p>consulta personajes, detalles, planeta de origen y transformaciones</p>
+        </nav>
+        <div class="flex nav">
+
+            <nav>
+                <input type="text" id="search" name="search" placeholder="Buscar personaje..." oninput="filtrarPersonajes()">
+            </nav>
+            <nav>
+                <select name="type" id="type" onchange="filtrarPersonajes()" >
+                </select>
+            </nav>
+        </div>
+    </div>
+    <div id="container"></div>
+    <script>
+        consumeApiDragonBall()
+    </script>
+    
+</body>
+</html>
