@@ -60,14 +60,14 @@ function filtrarPersonajes() {
     let textoBusqueda = document.getElementById('search').value.toLowerCase().trim();
     let razaSeleccionada = document.getElementById('type').value;
 
-    let filtrados = todosLosPersonajes.filter(function (p) {
+    let filtros = todosLosPersonajes.filter(function (p) {
         let coincideNombre = p.name.toLowerCase().includes(textoBusqueda);
         let coincideRaza = razaSeleccionada === 'seleccione'
             || (p.race && p.race === razaSeleccionada);
         return coincideNombre && coincideRaza;
     });
 
-    charactersDragonBall(filtrados);
+    charactersDragonBall(filtros);
 }
 
 function llenarSelectRazas() {
@@ -128,9 +128,9 @@ function description(dragon) {
     max.style.margin = '0%';
     id.style.margin = '0%';
 
-    
-        if (dragon.originPlanet) {
-        var btnPlaneta = createButton(
+
+    if (dragon.originPlanet) {
+        var botonPlaneta = createButton(
             'Ver planeta: ' + dragon.originPlanet.name,
             'planeta.html?id=' + dragon.originPlanet.id
         );
@@ -151,15 +151,14 @@ function description(dragon) {
     createContainer(divCenter, div);
     createContainer(pDesc, div);
 
-    // FIX: solo agregar el boton si existe
-    if (btnPlaneta) {   
-        createContainer(btnPlaneta, div);
+    if (botonPlaneta) {
+        createContainer(botonPlaneta, div);
     }
 
     createContainer(nav, divPadre);
     createContainer(div, divPadre);
 
-    // transformaciones
+
     if (dragon.transformations && dragon.transformations.length > 0) {
         let gridTrans = document.getElementById('Transformation');
         gridTrans.innerHTML = '';
@@ -193,7 +192,6 @@ function consumeApiPlanet() {
         })
         .catch(error => console.error('Error:', error));
 }
-
 function planet(planet) {
     let divPadre = document.getElementById('description');
     divPadre.innerHTML = '';
